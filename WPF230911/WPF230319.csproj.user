@@ -7,7 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\ConoidWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Cylinder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ParallelepipedWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SphereWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ConoidWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Cylinder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ParallelepipedWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SphereWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
