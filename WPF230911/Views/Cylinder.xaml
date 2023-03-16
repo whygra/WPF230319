@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:WPF230319.Views"
         mc:Ignorable="d"
         Title="Cylinder" Height="450" Width="800">
-    <Grid>
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
@@ -29,7 +29,8 @@
         </TextBlock>
 
         <!-- параметры фигуры -->
-        <Grid Grid.Row="1" Grid.Column="0">
+        <Grid Grid.Row="1" Grid.Column="0"
+              Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="1*"/>
@@ -44,15 +45,17 @@
             </TextBlock>
 
             <!--Поле ввода-->
-            <Grid Grid.Row="1" VerticalAlignment="Center" Height="20" Margin="10,0,10,0">
+            <Grid Grid.Row="1" VerticalAlignment="Center"
+                  Height="20" Margin="10,0,10,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="7*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
 
                 <TextBlock TextAlignment="Center" Grid.Column="0"
                             > Высота:</TextBlock>
-                <TextBox x:Name="txbxHeight" TextAlignment="Right" Grid.Column="1"
+                <TextBox x:Name="txbxHeight" 
+                         TextAlignment="Right" Grid.Column="1"
                          >0</TextBox>
 
                 <!--Поле ввода-->
@@ -60,7 +63,7 @@
             <!--Поле ввода-->
             <Grid Grid.Row="2" VerticalAlignment="Center" Height="20" Margin="10,0,10,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="7*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
 
@@ -76,7 +79,8 @@
         </Grid>
 
         <!-- Выбор материала -->
-        <Grid Grid.Row="1" Grid.Column="1">
+        <Grid Grid.Row="1" Grid.Column="1"
+              Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="4*"/>
@@ -111,7 +115,8 @@
 
 
         <!-- Результаты вычислений -->
-        <Grid Grid.Row="1" Grid.Column="2">
+        <Grid Grid.Row="1" Grid.Column="2"
+              Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="1*"/>
@@ -129,13 +134,13 @@
             <!--Поле вывода-->
             <Grid Grid.Row="1" VerticalAlignment="Center" Height="20" Margin="10,0,10,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="7*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
 
                 <TextBlock TextAlignment="Center" Grid.Column="0"
                             > Площадь поверхности:</TextBlock>
-                <TextBlock x:Name="txbkArea" TextAlignment="Right" Grid.Column="1"
+                <TextBlock x:Name="txblArea" TextAlignment="Right" Grid.Column="1"
                          >?</TextBlock>
 
                 <!--Поле вывода-->
@@ -144,11 +149,11 @@
             <!--Поле вывода-->
             <Grid Grid.Row="2" VerticalAlignment="Center" Height="20" Margin="10,0,10,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="7*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="txbkVolume" TextAlignment="Center" Grid.Column="0"
+                <TextBlock x:Name="txblVolume" TextAlignment="Center" Grid.Column="0"
                             > Объем:</TextBlock>
                 <TextBlock TextAlignment="Right" Grid.Column="1"
                          >?</TextBlock>
@@ -159,13 +164,13 @@
             <!--Поле вывода-->
             <Grid Grid.Row="3" VerticalAlignment="Center" Height="20" Margin="10,0,10,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="7*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
 
                 <TextBlock TextAlignment="Center" Grid.Column="0"
                             > Масса:</TextBlock>
-                <TextBlock x:Name="txbkMass" TextAlignment="Right" Grid.Column="1"
+                <TextBlock x:Name="txblMass" TextAlignment="Right" Grid.Column="1"
                          >?</TextBlock>
 
                 <!--Поле вывода-->
@@ -181,13 +186,12 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnSave" Grid.Column="0" Margin="25, 20, 25, 20" Background="Aquamarine">
-                <Bold>Сохранить</Bold>
+            <Button x:Name="btnCalculate" Grid.Column="0" Margin="20" Background="Aquamarine">
+                <Bold>Вычислить</Bold>
             </Button>
-            <Button x:Name="btnCancel" Grid.Column="1" Margin="25, 20, 25, 20" Background="PeachPuff">
-                <Bold>Отмена</Bold>
+            <Button x:Name="btnClose" Grid.Column="1" Margin="20" Background="PeachPuff">
+                <Bold>Закрыть</Bold>
             </Button>
         </Grid>
 
-    </Grid>
-</Window>
+    </Grid></Window>

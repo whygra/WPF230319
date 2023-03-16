@@ -19,7 +19,7 @@ namespace WPF230319.Models
         public Body() : this(new Sphere(), MaterialFactory.Steel) { }
 
         // материал тела
-        public Material Material { get; private set; }
+        public Material Material { get; set; }
 
         // форма тела
         // тип интерфейса - свойства фигуры конкретного типа будут недоступны

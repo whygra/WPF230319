@@ -16,7 +16,12 @@ namespace WPF230319.Models
         public static readonly Material Copper = new Material("Медь", 8.9);
 
         // коллекция материалов
-        public static Material[] Materials = { Steel, Ice, Granite, Copper };
+        public static Material[] Materials = new[] {
+            Steel,
+            Ice,
+            Granite,
+            Copper,
+        };
 
         // случайный материал
         public static Material GetRandom() =>

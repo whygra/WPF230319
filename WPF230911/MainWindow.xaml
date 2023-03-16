@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF230319"
         mc:Ignorable="d"
-        Title="Грабовский Ярослав. Задание по WPF на 19.03.2023" Height="450" Width="800" Loaded="Window_Loaded" Icon="/step.png">
+        Title="Грабовский Ярослав. Задание по WPF на 19.03.2023" Height="450" Width="800" Icon="/step.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
@@ -26,7 +26,7 @@
             </Bold>
         </TextBlock>
 
-        <Button Grid.Column="0" Grid.Row="1">
+        <Button Grid.Column="0" Grid.Row="1" Click="Button_Click">
             Усеченный конус
         </Button>
 
