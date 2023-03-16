@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\arrow-pointing-left-48.png" />
+    <None Remove="Images\arrow-pointing-left-outline-48.png" />
+    <None Remove="Images\arrow-pointing-right-48.png" />
+    <None Remove="Images\arrow-pointing-right-outline-48.png" />
+    <None Remove="Images\Bodies\CopperConoid.png" />
+    <None Remove="Images\Bodies\CopperCylinder.png" />
+    <None Remove="Images\Bodies\CopperParallelepiped.png" />
+    <None Remove="Images\Bodies\CopperSphere.png" />
+    <None Remove="Images\Bodies\GraniteConoid.png" />
+    <None Remove="Images\Bodies\GraniteCylinder.png" />
+    <None Remove="Images\Bodies\GraniteParallelepiped.png" />
+    <None Remove="Images\Bodies\GraniteSphere.png" />
+    <None Remove="Images\Bodies\IceConoid.png" />
+    <None Remove="Images\Bodies\IceCylinder.png" />
+    <None Remove="Images\Bodies\IceParallelepiped.png" />
+    <None Remove="Images\Bodies\IceSphere.png" />
+    <None Remove="Images\Bodies\SteelConoid.png" />
+    <None Remove="Images\Bodies\SteelCylinder.png" />
+    <None Remove="Images\Bodies\SteelParallelepiped.png" />
+    <None Remove="Images\Bodies\SteelSphere.png" />
+    <None Remove="Images\broom-48.png" />
+    <None Remove="Images\cone-48.png" />
+    <None Remove="Images\cylinder-48.png" />
+    <None Remove="Images\info-48.png" />
+    <None Remove="Images\logout-rounded-left-48.png" />
+    <None Remove="Images\octaedro-24.png" />
+    <None Remove="Images\orthogonal-view-48.png" />
+    <None Remove="Images\sphere-48.png" />
+    <None Remove="Images\spiral-bound-booklet-48.png" />
+    <None Remove="Images\step.png" />
+    <None Remove="step.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Bodies\CopperConoid.png" />
+    <Resource Include="Images\Bodies\CopperCylinder.png" />
+    <Resource Include="Images\Bodies\CopperParallelepiped.png" />
+    <Resource Include="Images\Bodies\CopperSphere.png" />
+    <Resource Include="Images\Bodies\GraniteConoid.png" />
+    <Resource Include="Images\Bodies\GraniteCylinder.png" />
+    <Resource Include="Images\Bodies\GraniteParallelepiped.png" />
+    <Resource Include="Images\Bodies\GraniteSphere.png" />
+    <Resource Include="Images\Bodies\IceConoid.png" />
+    <Resource Include="Images\Bodies\IceCylinder.png" />
+    <Resource Include="Images\Bodies\IceParallelepiped.png" />
+    <Resource Include="Images\Bodies\IceSphere.png" />
+    <Resource Include="Images\Bodies\SteelConoid.png" />
+    <Resource Include="Images\Bodies\SteelCylinder.png" />
+    <Resource Include="Images\Bodies\SteelParallelepiped.png" />
+    <Resource Include="Images\Bodies\SteelSphere.png" />
+    <Resource Include="Images\info-48.png" />
+    <Resource Include="Images\step.png" />
+    <Resource Include="step.png" />
+  </ItemGroup>
+
+</Project>

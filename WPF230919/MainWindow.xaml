@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPF230319.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF230319"
+        mc:Ignorable="d"
+        Title="Грабовский Ярослав. Задание по WPF на 19.03.2023" Height="450" Width="800" Icon="/step.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0"  Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="14">
+            <Bold>
+                Типы фигур расчетов
+            </Bold>
+            </TextBlock>
+            <Button x:Name="btnAbout" Click="btnAbout_Click"  Background="White" Grid.Column="1">
+                <Image Source="Images/info-48.png" 
+                       ToolTip="О программе" />
+            </Button>
+        </Grid>
+        
+
+        <Button x:Name="btnShowConoidWindow" Grid.Column="0" Grid.Row="1" Click="btnShowConoidWindow_Click">
+            Усеченный конус
+        </Button>
+
+        <Button  x:Name="btnShowSphereWindow" Grid.Column="1" Grid.Row="1" Click="btnShowSphereWindow_Click">
+            Cфера
+        </Button>
+
+        <Button  x:Name="btnShowCylinderWindow" Grid.Column="2" Grid.Row="1" Click="btnShowCylinderWindow_Click">
+            Цилиндр
+        </Button>
+
+        <Button  x:Name="btnShowParallelepipedWindow" Grid.Column="3" Grid.Row="1" Click="btnShowParallelepipedWindow_Click">
+            Прямоугольный параллелепипед
+        </Button>
+    </Grid>
+</Window>

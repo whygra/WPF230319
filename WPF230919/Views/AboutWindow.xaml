@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF230319.Views.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF230319.Views"
+        mc:Ignorable="d"
+        Title="О программе" Height="450" Width="800">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Padding="20" FontSize="16" TextWrapping="Wrap" xml:space="preserve" Grid.Column="0">
+Приложение WPF для вычислений параметров:
+    - площади поверхности
+    - объема
+    - массы
+
+объемных тел в форме:
+    - усеченного конуса
+    - цилиндра
+    - сферы
+    - прямоугольного параллелепипеда
+
+из материалов:
+    - сталь
+    - лед
+    - гранит
+    - медь
+
+        </TextBlock>
+        <TextBlock Padding="20" FontSize="16" TextWrapping="Wrap" xml:space="preserve" Grid.Column="1">
+Разработал студент Грабовский Ярослав
+Группа СПД111
+        </TextBlock>
+    </Grid>
+</Window>
